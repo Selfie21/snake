@@ -179,17 +179,6 @@ int loose(int newy, int newx){
 void showend(int score){
     clear();
     mvprintw(2,100,"Thanks for playing! Your score was: %d", score);
-    for(int i = 0; i < 40; i++){
-        mvprintw(i,0, "LOTHAR WUHLER");
-        mvprintw(i,25, "LOTHAR WUHLER");
-        mvprintw(i,60, "LOTHAR WUHLER");
-        mvprintw(i,85, "LOTHAR WUHLER");
-        mvprintw(i,i, "LOTHAR WUHLER");
-        mvprintw(40-i, 40+i, "LOTHAR WUHLER");
-        usleep(lag/2);
-        refresh();
-    }
-
     getch();
     endwin();
 }
